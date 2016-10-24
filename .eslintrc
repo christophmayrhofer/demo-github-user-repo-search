@@ -1,0 +1,26 @@
+{
+  "ecmaFeatures": {
+    "jsx": true,
+    "modules": true
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb",
+    "plugin:jsx-control-statements/recommended"
+  ],
+  "rules": {
+    "no-console": "off"
+  },
+  "plugins": [
+    "react",
+    "jsx-control-statements"
+  ],
+  "settings": {
+    "import/extensions": [".js", ".jsx"]
+  }
+}

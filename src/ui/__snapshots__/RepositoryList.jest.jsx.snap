@@ -1,0 +1,25 @@
+exports[`RepositoryList renders existing repositories 1`] = `
+<div
+  className="flex full-width">
+  <RepositoryItem
+    description="RepositoryDescription 1"
+    htmlUrl="RepositoryUrl 1"
+    language="RepositoryLanguage 1"
+    name="RepositoryName 1" />
+  <RepositoryItem
+    description="RepositoryDescription 2"
+    htmlUrl="RepositoryUrl 2"
+    language="RepositoryLanguage 2"
+    name="RepositoryName 2" />
+</div>
+`;
+
+exports[`RepositoryList renders message if the list contains no repositories 1`] = `
+<div
+  className="flex full-width">
+  <div
+    className="alert alert-info">
+    This user does not have any public repositories.
+  </div>
+</div>
+`;

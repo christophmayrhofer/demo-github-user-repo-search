@@ -1,0 +1,29 @@
+exports[`RepositoryItem renders correctly 1`] = `
+<div
+  className="panel panel-default repositoryPanel">
+  <div
+    className="panel-heading">
+    <a
+      href="RepositoryUrl">
+       
+      RepositoryName
+       
+    </a>
+    <b>
+       (
+      RepositoryLanguage
+      ) 
+    </b>
+  </div>
+  <div
+    className="panel-body">
+     
+    <cite>
+       
+      RepositoryDescription
+       
+    </cite>
+     
+  </div>
+</div>
+`;

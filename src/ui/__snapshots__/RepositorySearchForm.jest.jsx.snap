@@ -1,0 +1,98 @@
+exports[`RepositorySearchForm renders a spinner if isFetching is true 1`] = `
+<div
+  className="flex">
+  <form
+    className="form-inline full-width">
+    <input
+      className="form-control"
+      id="username"
+      onChange={[Function]}
+      placeholder="Github Username"
+      type="text"
+      value="username" />
+    <input
+      className="btn btn-primary"
+      id="submit"
+      onClick={[Function]}
+      type="submit"
+      value="Fetch Repositories" />
+  </form>
+  <ReactSpinner />
+</div>
+`;
+
+exports[`RepositorySearchForm renders errorMessage if hasFetchError is true 1`] = `
+<div
+  className="flex">
+  <form
+    className="form-inline full-width">
+    <input
+      className="form-control"
+      id="username"
+      onChange={[Function]}
+      placeholder="Github Username"
+      type="text"
+      value="username" />
+    <input
+      className="btn btn-primary"
+      id="submit"
+      onClick={[Function]}
+      type="submit"
+      value="Fetch Repositories" />
+  </form>
+  <div
+    className="alert alert-danger">
+    errorMessage
+  </div>
+</div>
+`;
+
+exports[`RepositorySearchForm renders hasNeverFetched message if the fetch button has never been pressed 1`] = `
+<div
+  className="flex">
+  <form
+    className="form-inline full-width">
+    <input
+      className="form-control"
+      id="username"
+      onChange={[Function]}
+      placeholder="Github Username"
+      type="text"
+      value="username" />
+    <input
+      className="btn btn-primary"
+      id="submit"
+      onClick={[Function]}
+      type="submit"
+      value="Fetch Repositories" />
+  </form>
+  <div
+    className="alert alert-info">
+    Enter Github username and click fetch...
+  </div>
+</div>
+`;
+
+exports[`RepositorySearchForm renders repositoryList after fetching 1`] = `
+<div
+  className="flex">
+  <form
+    className="form-inline full-width">
+    <input
+      className="form-control"
+      id="username"
+      onChange={[Function]}
+      placeholder="Github Username"
+      type="text"
+      value="username" />
+    <input
+      className="btn btn-primary"
+      id="submit"
+      onClick={[Function]}
+      type="submit"
+      value="Fetch Repositories" />
+  </form>
+  <RepositoryList
+    repositories={Array []} />
+</div>
+`;
