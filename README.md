@@ -15,6 +15,7 @@ Simple React App to demonstrate my coding style & file structure for the followi
 The app allows to input a username and to fetch a list of the user's Github repositories.
 
 It includes a webpack-dev-server.
+- Initialize/install npm dependencies --> "npm isntall"
 - Run the app (localhost:3000) --> "npm start"
 - Run tests (ava & jest) --> "npm test"
 
