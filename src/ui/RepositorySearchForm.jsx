@@ -16,31 +16,31 @@ export const RepositorySearchFormComponent = ({
     onChangeUsername = () => {},
     onClickFetch = () => {},
   }) => (
-  <div className="flex">
-    <form className="form-inline full-width">
-      <input id="username" type="text" className="form-control" placeholder="Github Username" value={username} onChange={onChangeUsername} />
-      <input id="submit" type="submit" className="btn btn-primary" onClick={onClickFetch} value="Fetch Repositories" />
-    </form>
+    <div className="flex">
+      <form className="form-inline full-width">
+        <input id="username" type="text" className="form-control" placeholder="Github Username" value={username} onChange={onChangeUsername} />
+        <input id="submit" type="submit" className="btn btn-primary" onClick={onClickFetch} value="Fetch Repositories" />
+      </form>
 
-    <Choose>
-      <When condition={hasNeverFetched}>
-        <div className="alert alert-info">
-          Enter Github username and click fetch...
-        </div>
-      </When>
-      <When condition={isFetching}>
-        <Spinner />
-      </When>
-      <When condition={hasFetchError}>
-        <div className="alert alert-danger">
-          {errorMessage}
-        </div>
-      </When>
-      <Otherwise>
-        <RepositoryList repositories={repositories} />
-      </Otherwise>
-    </Choose>
-  </div>
+      <Choose>
+        <When condition={hasNeverFetched}>
+          <div className="alert alert-info">
+            Enter Github username and click fetch...
+          </div>
+        </When>
+        <When condition={isFetching}>
+          <Spinner />
+        </When>
+        <When condition={hasFetchError}>
+          <div className="alert alert-danger">
+            {errorMessage}
+          </div>
+        </When>
+        <Otherwise>
+          <RepositoryList repositories={repositories} />
+        </Otherwise>
+      </Choose>
+    </div>
 );
 
 RepositorySearchFormComponent.propTypes = {
